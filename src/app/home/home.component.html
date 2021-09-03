@@ -1,7 +1,26 @@
 <h2>This is Home Component</h2>
 <br/>
-<h1>Fruit</h1>
-<div *ngFor="let f of fruit; let i = index">
-    <li>{{ i+1 }}. {{ f }}</li>
+<div class="test">
+   <h1>Fruit</h1>
+<br/>
+<table class="table">
+    <tr>
+      <th>No</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Discount</th>
+    </tr>
+    <tr *ngFor="let f of fruit2; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ f.name }}</td>
+      <td class="right">
+          <span [ngClass]="{'so-am': f.price < 0 }">{{ f.price }}</span>
+      </td>
+      <td class="right">
+        <span *ngIf="f.discount">On sale</span>
+    </td>
+    </tr>
+  </table> 
 </div>
+
 
