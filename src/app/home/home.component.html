@@ -1,2 +1,9 @@
 <h2>This is Home Component</h2>
 <h3>Hello {{ name }}</h3>
+<input value = "{{ name }}"/>
+<br/>
+<br/>
+<input [value] = "name" title = "This is {{ name }}"/>
+<br/>
+<br/>
+<input [value] = "name" [title] = "'This is ' + name"/>
