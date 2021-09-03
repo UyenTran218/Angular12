@@ -1,5 +1,7 @@
 <h2>This is Home Component</h2>
-<h3>Hello {{ name }}</h3>
 <br/>
-<h3 *ngIf="age > 18">You are too old</h3>
-<h3 *ngIf="age <= 18">You are too young</h3>
+<h1>Fruit</h1>
+<div *ngFor="let f of fruit; let i = index">
+    <li>{{ i+1 }}. {{ f }}</li>
+</div>
+
