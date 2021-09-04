@@ -1,26 +1,17 @@
 <h2>This is Home Component</h2>
-<br/>
+<br />
 <div class="test">
-   <h1>Fruit</h1>
-<br/>
-<table class="table">
-    <tr>
-      <th>No</th>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Discount</th>
-    </tr>
-    <tr *ngFor="let f of fruit2; let i = index">
-      <td>{{ i + 1 }}</td>
-      <td>{{ f.name | lowercase}}</td>
-      <td class="right">
-          <span [ngClass]="{'so-am': f.price < 0 }">{{ f.price | currency: 'USD' : 'symbol' : '1.2-2'}}</span>
-      </td>
-      <td class="right">
-        <span>{{ f.discount | onSale | uppercase }}</span>
-    </td>
-    </tr>
-  </table> 
+  <h1>Fruit</h1>
+  <br />
+  <br />
+  City:
+  <select id="city" (change)="changeCity($event)">
+    <option *ngFor="let c of cities" value="{{ c.city }}">{{ c.city }}</option>
+  </select>
+  Districts:
+  <select id="district">
+    <option *ngFor="let d of districts" value="{{ d }}">
+      {{ d }}
+    </option>
+  </select>
 </div>
-
-
