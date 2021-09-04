@@ -1,2 +1,10 @@
 <h2>Welcome to Angular 12</h2>
-<app-home></app-home>
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/about" routerLinkActive="active">About Component</a>
+    </li>
+    <li><a routerLink="/home" routerLinkActive="active">Home Component</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
