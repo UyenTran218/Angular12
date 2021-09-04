@@ -10,7 +10,5 @@ export class CommonService {
     return n * n;
   }
 
-  public submitData(data: any): void {
-    console.log('Gui data len server. Data = ', data);
-  }
+  public submitData(data: any): void {}
 }
