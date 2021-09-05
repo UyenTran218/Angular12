@@ -18,22 +18,12 @@
       "postId": 2
     },
     {
-      "id": 3,
-      "body": "some comment 3",
-      "postId": 3
-    },
-    {
-      "body": "some comment 3",
-      "postId": 3,
-      "id": 4
-    },
-    {
       "body": "some comment 3",
       "postId": 3,
       "id": 5
     },
     {
-      "body": "6th comment",
+      "body": "4th comment",
       "postId": 1,
       "id": 6
     }
